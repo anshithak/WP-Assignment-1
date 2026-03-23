@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="courses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="course" type="CourseType" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Course Type -->
+  <xs:complexType name="CourseType">
+    <xs:sequence>
+      <xs:element name="title"         type="xs:string"/>
+      <xs:element name="category"      type="xs:string"/>
+      <xs:element name="instructor"    type="InstructorType"/>
+      <xs:element name="price"         type="PriceType"/>
+      <xs:element name="originalPrice" type="PriceType"/>
+      <xs:element name="rating"        type="RatingType"/>
+      <xs:element name="reviewCount"   type="xs:positiveInteger"/>
+      <xs:element name="duration"      type="DurationType"/>
+      <xs:element name="level"         type="xs:string"/>
+      <xs:element name="description"   type="xs:string"/>
+      <xs:element name="curriculum"    type="CurriculumType"/>
+      <xs:element name="features"      type="FeaturesType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- Instructor Type -->
+  <xs:complexType name="InstructorType">
+    <xs:sequence>
+      <xs:element name="n"           type="xs:string"/>
+      <xs:element name="designation" type="xs:string"/>
+      <xs:element name="experience"  type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Price Type -->
+  <xs:complexType name="PriceType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal">
+        <xs:attribute name="currency" type="xs:string" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- Rating: must be between 0.0 and 5.0 -->
+  <xs:simpleType name="RatingType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0.0"/>
+      <xs:maxInclusive value="5.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Duration Type -->
+  <xs:complexType name="DurationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:positiveInteger">
+        <xs:attribute name="unit" use="required">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="hours"/>
+              <xs:enumeration value="days"/>
+              <xs:enumeration value="weeks"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- Curriculum Type -->
+  <xs:complexType name="CurriculumType">
+    <xs:sequence>
+      <xs:element name="module" type="ModuleType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Module Type -->
+  <xs:complexType name="ModuleType">
+    <xs:sequence>
+      <xs:element name="moduleTitle"    type="xs:string"/>
+      <xs:element name="durationHours"  type="xs:positiveInteger"/>
+    </xs:sequence>
+    <xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <!-- Features Type -->
+  <xs:complexType name="FeaturesType">
+    <xs:sequence>
+      <xs:element name="feature" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

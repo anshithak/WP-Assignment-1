@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduSphere – Learn Without Limits</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ======= NAVBAR ======= -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Edu<span>Sphere</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#courses" class="nav-link">Courses</a></li>
+      <li><a href="#course-detail" class="nav-link">Course Details</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#register" class="nav-link btn-nav">Register</a></li>
+      <li><a href="#login" class="nav-link btn-nav-outline">Login</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ======= HOME ======= -->
+<section id="home" class="hero">
+  <div class="hero-bg-orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+  <div class="hero-content">
+    <span class="hero-badge">🎓 Next-Gen Learning Platform</span>
+    <h1 class="hero-title">Learn Without<br/><span class="gradient-text">Limits.</span></h1>
+    <p class="hero-sub">Access world-class courses from expert instructors. Build real skills, earn certificates, and transform your career — all at your own pace.</p>
+    <div class="hero-actions">
+      <a href="#courses" class="btn btn-primary">Explore Courses</a>
+      <a href="#register" class="btn btn-ghost">Get Started Free →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>50K+</strong><span>Students</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><strong>200+</strong><span>Courses</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><strong>98%</strong><span>Satisfaction</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card floating">
+      <div class="hcard-icon">🚀</div>
+      <div>
+        <p class="hcard-title">Full-Stack Dev</p>
+        <div class="hcard-stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="hero-card floating delay1">
+      <div class="hcard-icon">🤖</div>
+      <div>
+        <p class="hcard-title">AI & ML</p>
+        <div class="hcard-stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="hero-card floating delay2">
+      <div class="hcard-icon">🎨</div>
+      <div>
+        <p class="hcard-title">UI/UX Design</p>
+        <div class="hcard-stars">★★★★☆</div>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <div class="hero-img-placeholder">
+        <div class="img-icon">📚</div>
+        <p>Your Learning Journey Starts Here</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= COURSES ======= -->
+<section id="courses" class="section courses-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Our Curriculum</span>
+      <h2>Featured <span class="gradient-text">Courses</span></h2>
+      <p>Hand-picked courses designed by industry experts to accelerate your learning.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="ai">AI & ML</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="data">Data Science</button>
+    </div>
+
+    <div class="courses-grid" id="coursesGrid">
+
+      <div class="course-card" data-cat="web">
+        <div class="course-img" style="background: linear-gradient(135deg,#f7971e,#ffd200);">
+          <span class="course-emoji">⚡</span>
+        </div>
+        <div class="course-body">
+          <span class="course-badge">Web Dev</span>
+          <h3 class="course-title">Full-Stack JavaScript Bootcamp</h3>
+          <p class="course-instructor">👤 Dr. Aryan Mehta</p>
+          <div class="course-meta">
+            <div class="stars">★★★★★ <span class="rating-num">4.9</span></div>
+            <span class="course-duration">⏱ 42h</span>
+          </div>
+          <div class="course-footer">
+            <span class="price">₹4,999</span>
+            <a href="#course-detail" class="btn-card">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="ai">
+        <div class="course-img" style="background: linear-gradient(135deg,#6e48aa,#9d50bb);">
+          <span class="course-emoji">🤖</span>
+        </div>
+        <div class="course-body">
+          <span class="course-badge">AI & ML</span>
+          <h3 class="course-title">Machine Learning with Python</h3>
+          <p class="course-instructor">👤 Prof. Sneha Reddy</p>
+          <div class="course-meta">
+            <div class="stars">★★★★★ <span class="rating-num">4.8</span></div>
+            <span class="course-duration">⏱ 38h</span>
+          </div>
+          <div class="course-footer">
+            <span class="price">₹5,999</span>
+            <a href="#course-detail" class="btn-card">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="design">
+        <div class="course-img" style="background: linear-gradient(135deg,#f953c6,#b91d73);">
+          <span class="course-emoji">🎨</span>
+        </div>
+        <div class="course-body">
+          <span class="course-badge">Design</span>
+          <h3 class="course-title">UI/UX Design Masterclass</h3>
+          <p class="course-instructor">👤 Riya Sharma</p>
+          <div class="course-meta">
+            <div class="stars">★★★★☆ <span class="rating-num">4.7</span></div>
+            <span class="course-duration">⏱ 28h</span>
+          </div>
+          <div class="course-footer">
+            <span class="price">₹3,499</span>
+            <a href="#course-detail" class="btn-card">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="data">
+        <div class="course-img" style="background: linear-gradient(135deg,#11998e,#38ef7d);">
+          <span class="course-emoji">📊</span>
+        </div>
+        <div class="course-body">
+          <span class="course-badge">Data Science</span>
+          <h3 class="course-title">Data Science & Analytics</h3>
+          <p class="course-instructor">👤 Dr. Vikram Nair</p>
+          <div class="course-meta">
+            <div class="stars">★★★★★ <span class="rating-num">4.9</span></div>
+            <span class="course-duration">⏱ 50h</span>
+          </div>
+          <div class="course-footer">
+            <span class="price">₹6,499</span>
+            <a href="#course-detail" class="btn-card">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="web">
+        <div class="course-img" style="background: linear-gradient(135deg,#2980b9,#6dd5fa);">
+          <span class="course-emoji">⚛️</span>
+        </div>
+        <div class="course-body">
+          <span class="course-badge">Web Dev</span>
+          <h3 class="course-title">React & Next.js Complete Guide</h3>
+          <p class="course-instructor">👤 Kiran Patel</p>
+          <div class="course-meta">
+            <div class="stars">★★★★★ <span class="rating-num">4.8</span></div>
+            <span class="course-duration">⏱ 35h</span>
+          </div>
+          <div class="course-footer">
+            <span class="price">₹4,499</span>
+            <a href="#course-detail" class="btn-card">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card" data-cat="ai">
+        <div class="course-img" style="background: linear-gradient(135deg,#f7797d,#fbd786);">
+          <span class="course-emoji">🧠</span>
+        </div>
+        <div class="course-body">
+          <span class="course-badge">AI & ML</span>
+          <h3 class="course-title">Deep Learning & Neural Networks</h3>
+          <p class="course-instructor">👤 Dr. Ananya Rao</p>
+          <div class="course-meta">
+            <div class="stars">★★★★☆ <span class="rating-num">4.6</span></div>
+            <span class="course-duration">⏱ 45h</span>
+          </div>
+          <div class="course-footer">
+            <span class="price">₹7,999</span>
+            <a href="#course-detail" class="btn-card">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= COURSE DETAIL ======= -->
+<section id="course-detail" class="section detail-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Deep Dive</span>
+      <h2>Course <span class="gradient-text">Details</span></h2>
+    </div>
+    <div class="detail-grid">
+      <div class="detail-left">
+        <div class="detail-hero-img">
+          <span class="detail-emoji">⚡</span>
+          <div class="detail-hero-text">
+            <span class="course-badge">Web Dev</span>
+            <h3>Full-Stack JavaScript Bootcamp</h3>
+          </div>
+        </div>
+        <div class="detail-desc">
+          <h4>About this Course</h4>
+          <p>Master full-stack development with JavaScript — from HTML/CSS fundamentals to building scalable REST APIs and modern React frontends. This course is project-based, industry-aligned, and mentor-supported.</p>
+        </div>
+        <div class="curriculum">
+          <h4>Course Curriculum</h4>
+          <div class="curriculum-list">
+            <div class="curr-item open">
+              <div class="curr-head"><span>📌 Module 1: HTML & CSS Mastery</span><span class="curr-dur">6h</span></div>
+              <ul class="curr-sub">
+                <li>✓ Semantic HTML5</li>
+                <li>✓ CSS Grid & Flexbox</li>
+                <li>✓ Responsive Design</li>
+              </ul>
+            </div>
+            <div class="curr-item">
+              <div class="curr-head"><span>📌 Module 2: JavaScript Deep Dive</span><span class="curr-dur">10h</span></div>
+            </div>
+            <div class="curr-item">
+              <div class="curr-head"><span>📌 Module 3: React Fundamentals</span><span class="curr-dur">8h</span></div>
+            </div>
+            <div class="curr-item">
+              <div class="curr-head"><span>📌 Module 4: Node.js & Express</span><span class="curr-dur">8h</span></div>
+            </div>
+            <div class="curr-item">
+              <div class="curr-head"><span>📌 Module 5: Database & Deployment</span><span class="curr-dur">10h</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-right">
+        <div class="detail-card sticky-card">
+          <div class="detail-price-box">
+            <span class="detail-price">₹4,999</span>
+            <span class="detail-old-price">₹9,999</span>
+            <span class="detail-discount">50% OFF</span>
+          </div>
+          <div class="detail-info-list">
+            <div class="dinfo"><span>⏱</span><p><strong>42 Hours</strong> on-demand video</p></div>
+            <div class="dinfo"><span>📱</span><p>Mobile & Desktop access</p></div>
+            <div class="dinfo"><span>🏆</span><p>Certificate of completion</p></div>
+            <div class="dinfo"><span>♾️</span><p>Lifetime access</p></div>
+          </div>
+          <a href="#register" class="btn btn-primary full-width">Enroll Now</a>
+          <a href="#" class="btn btn-outline full-width">Try Free Preview</a>
+          <div class="instructor-mini">
+            <div class="inst-avatar">A</div>
+            <div>
+              <p class="inst-name">Dr. Aryan Mehta</p>
+              <p class="inst-title">Senior Software Engineer, Google</p>
+              <div class="stars sm-stars">★★★★★ 4.9 (3.2k reviews)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= REGISTER ======= -->
+<section id="register" class="section auth-section">
+  <div class="container auth-container">
+    <div class="auth-visual">
+      <div class="auth-visual-inner">
+        <h2>Join 50,000+<br/>Learners Today</h2>
+        <p>Create your free account and start learning from the best instructors worldwide.</p>
+        <ul class="auth-perks">
+          <li>✅ Free access to select courses</li>
+          <li>✅ Certificate on completion</li>
+          <li>✅ Community & mentorship</li>
+          <li>✅ Mobile app included</li>
+        </ul>
+      </div>
+    </div>
+    <div class="auth-form-wrap">
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="registerTab" onclick="switchTab('register')">Register</button>
+        <button class="auth-tab" id="loginTab" onclick="switchTab('login')">Login</button>
+      </div>
+
+      <!-- REGISTER FORM -->
+      <form id="registerForm" class="auth-form" onsubmit="validateRegister(event)">
+        <h3>Create Account</h3>
+        <div class="form-group">
+          <label for="reg-name">Full Name</label>
+          <input type="text" id="reg-name" placeholder="John Doe" />
+          <span class="err" id="reg-name-err"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-email">Email Address</label>
+          <input type="email" id="reg-email" placeholder="you@example.com" />
+          <span class="err" id="reg-email-err"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-pass">Password</label>
+          <input type="password" id="reg-pass" placeholder="Min. 8 characters" />
+          <span class="err" id="reg-pass-err"></span>
+        </div>
+        <div class="form-group">
+          <label for="reg-conf">Confirm Password</label>
+          <input type="password" id="reg-conf" placeholder="Repeat password" />
+          <span class="err" id="reg-conf-err"></span>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Create Account →</button>
+        <div class="success-msg" id="reg-success"></div>
+      </form>
+
+      <!-- LOGIN FORM -->
+      <form id="loginForm" class="auth-form hidden" onsubmit="validateLogin(event)">
+        <h3>Welcome Back</h3>
+        <div class="form-group">
+          <label for="log-email">Email Address</label>
+          <input type="email" id="log-email" placeholder="you@example.com" />
+          <span class="err" id="log-email-err"></span>
+        </div>
+        <div class="form-group">
+          <label for="log-pass">Password</label>
+          <input type="password" id="log-pass" placeholder="Your password" />
+          <span class="err" id="log-pass-err"></span>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Login →</button>
+        <div class="success-msg" id="log-success"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======= LOGIN ANCHOR (for nav link) ======= -->
+<div id="login" style="position:relative;top:-80px;"></div>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="tag">Get in Touch</span>
+      <h2>Contact <span class="gradient-text">Us</span></h2>
+      <p>Have questions? We'd love to hear from you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="cinfo-item">
+          <div class="cinfo-icon">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>Chaitanya Bharathi Institute of Technology,<br>Gandipet, Hyderabad – 500075, Telangana</p>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <p>support@edusphere.in<br>info@edusphere.in</p>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 98765 43210<br>+91 40-1234-5678</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn">Twitter</a>
+          <a href="#" class="social-btn">LinkedIn</a>
+          <a href="#" class="social-btn">YouTube</a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="submitContact(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="c-name" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="c-email" placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" id="c-subject" placeholder="How can we help?" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="c-msg" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message →</button>
+        <div class="success-msg" id="contact-success"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo">Edu<span>Sphere</span></a>
+      <p>Empowering learners worldwide with cutting-edge education.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h5>Resources</h5>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 EduSphere. Made with ❤️ for CBIT Hyderabad — WP Assignment I</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

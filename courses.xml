@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="courses.xsd">
+
+  <course id="C001">
+    <title>Full-Stack JavaScript Bootcamp</title>
+    <category>Web Development</category>
+    <instructor>
+      <name>Dr. Aryan Mehta</name>
+      <designation>Senior Software Engineer, Google</designation>
+      <experience>12 years</experience>
+    </instructor>
+    <price currency="INR">4999</price>
+    <originalPrice currency="INR">9999</originalPrice>
+    <rating>4.9</rating>
+    <reviewCount>3200</reviewCount>
+    <duration unit="hours">42</duration>
+    <level>Beginner to Advanced</level>
+    <description>Master full-stack development with JavaScript — from HTML/CSS fundamentals to scalable REST APIs and modern React frontends.</description>
+    <curriculum>
+      <module order="1">
+        <moduleTitle>HTML and CSS Mastery</moduleTitle>
+        <durationHours>6</durationHours>
+      </module>
+      <module order="2">
+        <moduleTitle>JavaScript Deep Dive</moduleTitle>
+        <durationHours>10</durationHours>
+      </module>
+      <module order="3">
+        <moduleTitle>React Fundamentals</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="4">
+        <moduleTitle>Node.js and Express</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="5">
+        <moduleTitle>Database and Deployment</moduleTitle>
+        <durationHours>10</durationHours>
+      </module>
+    </curriculum>
+    <features>
+      <feature>Lifetime access</feature>
+      <feature>Certificate of completion</feature>
+      <feature>Mobile and desktop access</feature>
+      <feature>Project-based learning</feature>
+    </features>
+  </course>
+
+  <course id="C002">
+    <title>Machine Learning with Python</title>
+    <category>AI and ML</category>
+    <instructor>
+      <name>Prof. Sneha Reddy</name>
+      <designation>AI Research Lead, Microsoft</designation>
+      <experience>10 years</experience>
+    </instructor>
+    <price currency="INR">5999</price>
+    <originalPrice currency="INR">11999</originalPrice>
+    <rating>4.8</rating>
+    <reviewCount>2800</reviewCount>
+    <duration unit="hours">38</duration>
+    <level>Intermediate</level>
+    <description>Learn Machine Learning from scratch using Python. Covers supervised and unsupervised learning, model evaluation, and deployment.</description>
+    <curriculum>
+      <module order="1">
+        <moduleTitle>Python for Data Science</moduleTitle>
+        <durationHours>6</durationHours>
+      </module>
+      <module order="2">
+        <moduleTitle>Supervised Learning Algorithms</moduleTitle>
+        <durationHours>10</durationHours>
+      </module>
+      <module order="3">
+        <moduleTitle>Unsupervised Learning</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="4">
+        <moduleTitle>Model Evaluation and Tuning</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="5">
+        <moduleTitle>ML Model Deployment</moduleTitle>
+        <durationHours>6</durationHours>
+      </module>
+    </curriculum>
+    <features>
+      <feature>Lifetime access</feature>
+      <feature>Certificate of completion</feature>
+      <feature>Hands-on projects</feature>
+      <feature>Industry mentorship</feature>
+    </features>
+  </course>
+
+  <course id="C003">
+    <title>UI/UX Design Masterclass</title>
+    <category>Design</category>
+    <instructor>
+      <name>Riya Sharma</name>
+      <designation>Lead Designer, Adobe</designation>
+      <experience>8 years</experience>
+    </instructor>
+    <price currency="INR">3499</price>
+    <originalPrice currency="INR">6999</originalPrice>
+    <rating>4.7</rating>
+    <reviewCount>1900</reviewCount>
+    <duration unit="hours">28</duration>
+    <level>Beginner</level>
+    <description>Learn to design stunning user interfaces and create delightful user experiences using Figma, Adobe XD, and design thinking frameworks.</description>
+    <curriculum>
+      <module order="1">
+        <moduleTitle>Design Principles and Color Theory</moduleTitle>
+        <durationHours>5</durationHours>
+      </module>
+      <module order="2">
+        <moduleTitle>Wireframing and Prototyping</moduleTitle>
+        <durationHours>7</durationHours>
+      </module>
+      <module order="3">
+        <moduleTitle>Figma Advanced Techniques</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="4">
+        <moduleTitle>User Research and Testing</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+    </curriculum>
+    <features>
+      <feature>Lifetime access</feature>
+      <feature>Certificate of completion</feature>
+      <feature>Portfolio projects</feature>
+      <feature>Community support</feature>
+    </features>
+  </course>
+
+  <course id="C004">
+    <title>Data Science and Analytics</title>
+    <category>Data Science</category>
+    <instructor>
+      <name>Dr. Vikram Nair</name>
+      <designation>Chief Data Scientist, Amazon</designation>
+      <experience>15 years</experience>
+    </instructor>
+    <price currency="INR">6499</price>
+    <originalPrice currency="INR">12999</originalPrice>
+    <rating>4.9</rating>
+    <reviewCount>4100</reviewCount>
+    <duration unit="hours">50</duration>
+    <level>Intermediate to Advanced</level>
+    <description>Comprehensive Data Science course covering statistics, Python, SQL, visualization, and end-to-end analytics pipelines.</description>
+    <curriculum>
+      <module order="1">
+        <moduleTitle>Statistics and Probability</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="2">
+        <moduleTitle>Python and Pandas</moduleTitle>
+        <durationHours>10</durationHours>
+      </module>
+      <module order="3">
+        <moduleTitle>SQL for Analytics</moduleTitle>
+        <durationHours>8</durationHours>
+      </module>
+      <module order="4">
+        <moduleTitle>Data Visualization</moduleTitle>
+        <durationHours>10</durationHours>
+      </module>
+      <module order="5">
+        <moduleTitle>Capstone Project</moduleTitle>
+        <durationHours>14</durationHours>
+      </module>
+    </curriculum>
+    <features>
+      <feature>Lifetime access</feature>
+      <feature>Certificate of completion</feature>
+      <feature>Real-world datasets</feature>
+      <feature>Job placement assistance</feature>
+    </features>
+  </course>
+
+</courses>
